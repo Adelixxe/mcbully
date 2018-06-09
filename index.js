@@ -15,7 +15,7 @@ bot.on('ready',() => {
 }));
 
 bot.on('message', message => {
-     if(message.author.id === '152045576354004992') {
+     if(message.author.id === '294148055228350464') {
      const char* table[] = {
       "Aled",
       "Oskurr",
