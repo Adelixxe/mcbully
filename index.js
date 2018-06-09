@@ -3,7 +3,11 @@ const bot = new Discord.Client();
 const fs = require("fs");
 var cli = new Discord.Client({autoReconnect:true});
 var servers = {};
-
+function random(min, max){
+     min = Math.ceil(0);
+     max = Math.floor(2);
+     i = Math.floor(Math.random() * (max - min +1)+ min);
+ }
 bot.commands = new Discord.Collection();
 bot.on("error", (e) => console.error(e));
 bot.on("warn", (e) => console.warn(e));
@@ -16,13 +20,15 @@ bot.on('ready',() => {
 
 bot.on('message', message => {
      if(message.author.id === '294148055228350464') {
-     const char* table[] = {
-      "Aled",
-      "Oskurr",
-      "Riz au lait"
-     }
-     var i = random(0, MAX);
-     printf("%s", insulte[i]);
+    random()
+     if (i ==1){
+       message.reply("ALED");
+       console.log(i);
+       }
+     if (i ==2){
+       message.reply("OSKUUUUR");
+       console.log(i);
+       }       
   })
   
   
