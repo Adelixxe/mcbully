@@ -21,16 +21,15 @@ bot.on('ready',() => {
 bot.on('message', message => {
      if(message.author.id === '294148055228350464') {
     random()
-     if (i ==1){
+     if (i == 1){
        message.reply("ALED");
        console.log(i);
        }
-     if (i ==2){
+     if (i == 2){
        message.reply("OSKUUUUR");
        console.log(i);
        }       
-  })
-  
+  }})
   
 
 
