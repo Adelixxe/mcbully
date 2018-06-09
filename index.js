@@ -15,7 +15,13 @@ bot.on('ready',() => {
   bot.user.setPresence({game: {name: "Sven Bullying Simulator 2018", type: 0}});
 }));
 
-
+bot.on('message', message => {
+       if (message.content === ' ') && if (message.author.id!=='294148055228350464') {
+            message.reply('t gro mdr')}
+  {)
+  
+  )}
+  
 
 
 
