@@ -21,7 +21,7 @@ bot.on('message', message => {
       "Oskurr",
       "Riz au lait"
      }
-     int i = random(0, MAX);
+     var i = random(0, MAX);
      printf("%s", insulte[i]);
   })
   
