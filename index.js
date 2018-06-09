@@ -20,4 +20,4 @@ bot.on('ready',() => {
 
 
 
-client.login(token);
+bot.login(process.env.BOT_TOKEN);
