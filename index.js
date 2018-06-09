@@ -1,12 +1,21 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 const token = 'ALED LE TOKEN';
+const fs = require("fs");
 
-client.on('ready', () => {
-  console.log('Go bully Sven!');
-});
+var cli = new Discord.Client({autoReconnect:true});
+var servers = {};
 
+bot.commands = new Discord.Collection();
+bot.on("error", (e) => console.error(e));
+bot.on("warn", (e) => console.warn(e));
+bot.on("debug", (e) => console.info(e));
+bot.on('ready', function() {console.log(" McBully https://...")},
 
+bot.on('ready',() => {
+  bot.user.setGame(" bully Sven");
+}));
+bot.on('message', message => {
 
 
 
