@@ -18,9 +18,8 @@ bot.on('ready',() => {
 bot.on('message', message => {
        if (message.content === ' ' && message.author.id === '294148055228350464') {
             message.reply('t gro mdr')}
-  {)
+  }
   
-  )}
   
 
 
