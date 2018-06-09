@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const fs = require("fs");
-const idSven = '152045576354004992'
 var cli = new Discord.Client({autoReconnect:true});
 var servers = {};
 
@@ -16,7 +15,7 @@ bot.on('ready',() => {
 }));
 
 bot.on('message', message => {
-     if(message.author.id === '294148055228350464') {
+     if(message.author.id === '152045576354004992') {
             message.reply('t gro mdr')}
   })
   
