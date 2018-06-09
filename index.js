@@ -16,7 +16,13 @@ bot.on('ready',() => {
 
 bot.on('message', message => {
      if(message.author.id === '152045576354004992') {
-            message.reply('t gro mdr')}
+     const char* table[] = {
+      "Aled",
+      "Oskurr",
+      "Riz au lait"
+     }
+     int i = random(0, MAX);
+     printf("%s", insulte[i]);
   })
   
   
