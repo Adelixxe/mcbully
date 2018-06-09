@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = 'ALED LE TOKEN';
 const fs = require("fs");
-
+const idSven = '152045576354004992'
 var cli = new Discord.Client({autoReconnect:true});
 var servers = {};
 
