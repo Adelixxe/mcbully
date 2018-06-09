@@ -1,2 +1,2 @@
 # mcbully
-A bot discord for bully someone
+A discord bot to bully someone :)
