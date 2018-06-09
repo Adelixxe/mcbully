@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'NDU1MTA3MDg2NDE4ODM3NTIO.Df3LDw.ff3aJkYUJWooMsb2YZBZcl7sPzY';
 const fs = require("fs");
 const idSven = '152045576354004992'
 var cli = new Discord.Client({autoReconnect:true});
