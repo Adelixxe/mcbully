@@ -12,7 +12,7 @@ bot.on("debug", (e) => console.info(e));
 bot.on('ready', function() {console.log(" McBully https://discordapp.com/oauth2/authorize?client_id=455107086418837524&scope=bot&permissions=104324160")},
 
 bot.on('ready',() => {
-  client.user.setActivity('Sven', { type: 'bully ' });
+  bot.user.setActivity({game: {name: "bully Sven", type: 0}});
 }));
 
 
