@@ -29,10 +29,15 @@ var insultes = [
 /*22*/     "Tu es tellement gros qu'il te faut un GPS pour trouver ton nombril.",
 /*23*/     "T'es qu'une merde.",
 /*24*/     "Pourquoi tu rages Sven ?",
-/*25*/     "Arrête de rager."
+/*25*/     "Arrête de rager.",
+/*26*/     "T'es qu'un sanglier humain.",
+/*27*/     "Du coup si tu fais le poirier, tu t'étouffes ?",
+/*28*/     "C'est pas un peu bizarre d'avoir deux artères bouchées et de rester en vie ?",
+/*29*/     "Pourquoi tu gonfles tes joues?",
+/*30*/     "T'es grosses Mélissandre"
 ];
 
-const maximum = 25;
+const maximum = 30;
 
 function random(min, max) {
      min = Math.ceil(0);
