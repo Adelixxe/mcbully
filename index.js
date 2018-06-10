@@ -28,7 +28,7 @@ var insultes = [
 /*21*/     "Suce mes couilles.",
 /*22*/     "Tu es tellement gros qu'il te faut un GPS pour trouver ton nombril.",
 /*23*/     "T'es qu'une merde.",
-/*24*/     "Pourquoi tu rages Sven?"
+/*24*/     "Pourquoi tu rages Sven?",
 /*25*/     "Arrête de rager."
 
 ];
