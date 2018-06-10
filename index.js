@@ -32,11 +32,11 @@ var insultes = [
 /*25*/     "Arrête de rager."
 ];
 
-const max = 25;
+const maximum = 25;
 
 function random(min, max) {
      min = Math.ceil(0);
-     max = Math.floor(max);
+     max = Math.floor(maximum);
      i = Math.floor(Math.random() * (max - min) + min);
 }
 
