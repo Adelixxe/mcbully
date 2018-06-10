@@ -19,7 +19,7 @@ bot.on('ready',() => {
 }));
 
 bot.on('message', message => {
-     if(message.author.id === '294148055228350464') {
+     if(message.author.id === '152045576354004992') {
     random()
      if (i == 1){
        message.reply("Parle pas !");
