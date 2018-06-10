@@ -28,14 +28,15 @@ var insultes = [
 /*21*/     "Suce mes couilles.",
 /*22*/     "Tu es tellement gros qu'il te faut un GPS pour trouver ton nombril.",
 /*23*/     "T'es qu'une merde.",
-/*24*/     "Pourquoi tu rages Sven?",
+/*24*/     "Pourquoi tu rages Sven ?",
 /*25*/     "Arrête de rager."
-
 ];
+
+const max = 25;
 
 function random(min, max) {
      min = Math.ceil(0);
-     max = Math.floor(20);
+     max = Math.floor(max);
      i = Math.floor(Math.random() * (max - min) + min);
 }
 
