@@ -34,7 +34,7 @@ var insultes = [
 /*27*/     "Du coup si tu fais le poirier, tu t'étouffes ?",
 /*28*/     "C'est pas un peu bizarre d'avoir deux artères bouchées et de rester en vie ?",
 /*29*/     "Pourquoi tu gonfles tes joues?",
-/*30*/     "T'es grosses Mélissandre"
+/*30*/     "T'es grosse Mélissandre"
 ];
 
 const maximum = 30;
