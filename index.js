@@ -39,31 +39,33 @@ var insultes = [
 
 const maximum = 30;
 
-function random(min, max) {
-     min = Math.ceil(0);
-     max = Math.floor(maximum);
-     i = Math.floor(Math.random() * (max - min) + min);
-}
+/*function random(min, max) {
+    min = Math.ceil(0);
+    max = Math.floor(maximum);
+    i = Math.floor(Math.random() * (max - min) + min);
+}*/
 
 bot.commands = new Discord.Collection();
 bot.on("error", (e) => console.error(e));
 bot.on("warn", (e) => console.warn(e));
 bot.on("debug", (e) => console.info(e));
 bot.on('ready', function() {
-     console.log(" McBully https://discordapp.com/oauth2/authorize?client_id=455107086418837524&scope=bot&permissions=104324160")
+    console.log(" McBully https://discordapp.com/oauth2/authorize?client_id=455107086418837524&scope=bot&permissions=104324160")
 });
 
 bot.on('ready', () => {
-     bot.user.setPresence({game: {name: "Sven Bullying Simulator 2018", type: 0}});
+    bot.user.setPresence({game: {name: "Bully Simulator 2018", type: 0}});
 });
 
 bot.on('message', message => {
-     if(message.author.id === '152045576354004992') {
-          random()
-          message.reply(insultes[i]);
-          console.log(i);
+    if(message.author.id === '152045576354004992') {
+        j = Math.floor(Math.random() * 11);
+        if (j % 2 == 0) {
+            i = Math.floor((Math.random() * maximum) + 1);
+            console.log(i);
+            message.reply(insultes[i]);
+        }
      }
 });
-
 
 bot.login(process.env.BOT_TOKEN);
