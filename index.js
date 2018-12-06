@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 const fs = require("fs");
 var cli = new Discord.Client({autoReconnect:true});
 var servers = {};
+var UserID = 0
 
 var insultes = [
 /*01*/     "Parle pas !",
@@ -28,22 +29,15 @@ var insultes = [
 /*21*/     "Suce mes couilles.",
 /*22*/     "Tu es tellement gros qu'il te faut un GPS pour trouver ton nombril.",
 /*23*/     "T'es qu'une merde.",
-/*24*/     "Pourquoi tu rages Sven ?",
-/*25*/     "Arrête de rager.",
-/*26*/     "T'es qu'un sanglier humain.",
-/*27*/     "Du coup si tu fais le poirier, tu t'étouffes ?",
-/*28*/     "C'est pas un peu bizarre d'avoir deux artères bouchées et de rester en vie ?",
-/*29*/     "Pourquoi tu gonfles tes joues?",
-/*30*/     "T'es grosse Mélissandre"
+/*24*/     "Arrête de rager.",
+/*25*/     "T'es qu'un sanglier humain.",
+/*26*/     "Du coup si tu fais le poirier, tu t'étouffes ?",
+/*27*/     "C'est pas un peu bizarre d'avoir deux artères bouchées et de rester en vie ?",
+/*28*/     "Pourquoi tu gonfles tes joues?",
+/*29*/     "T'es grosse Mélissandre"
 ];
 
-const maximum = 30;
-
-/*function random(min, max) {
-    min = Math.ceil(0);
-    max = Math.floor(maximum);
-    i = Math.floor(Math.random() * (max - min) + min);
-}*/
+const maximum = 29;
 
 bot.commands = new Discord.Collection();
 bot.on("error", (e) => console.error(e));
@@ -54,11 +48,16 @@ bot.on('ready', function() {
 });
 
 bot.on('ready', () => {
-    bot.user.setPresence({game: {name: "Bully Simulator 2018", type: 0}});
+    bot.user.setPresence({game: {name: "Bully Simulator 2019", type: 0}});
 });
 
+if (msg.content.startsWith("$mcbid") {
+    var UserID = message.content
+    msg.reply('Le bully commence :D')
+    {
+
 bot.on('message', message => {
-    if(message.author.id === '152045576354004992') {
+    if(message.author.id === UserID) {
         j = Math.floor(Math.random() * 11);
         if (j % 2 == 0) {
             i = Math.floor((Math.random() * maximum) + 1);
